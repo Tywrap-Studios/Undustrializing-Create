@@ -1,42 +1,30 @@
 package net.tywrapstudios.c_undustrialized.item;
 
-import com.tterrag.registrate.Registrate;
-import com.tterrag.registrate.util.entry.RegistryEntry;
+
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.tywrapstudios.c_undustrialized.UndustrializedMod;
+import net.minecraft.world.item.ItemStack;
+
+import static net.tywrapstudios.c_undustrialized.item.ModItems.*;
 
 public class ModItemGroups {
 
-/*    private static final CreativeModeTab C_UNDUSTRIALIZED_MAIN = FabricItemGroup.builder()
+    public static void registerModItemGroups() {
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation("c_undustrialized", "cu_main"), CU_MAIN);
+    }
+    private static final CreativeModeTab CU_MAIN = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.CRUSHED_BAUXITE))
-            .displayName(Component.translatable("itemGroup.undustrialized.main"))
-            .entries((context, entries) -> {
-                entries.add(ModItems.CRUSHED_BAUXITE);
+            .title(Component.translatable("itemGroup.c_undustrialized_cu_main"))
+            .displayItems((context, entries) -> {
+                entries.accept(CRUSHED_BAUXITE);
+                entries.accept(STEEL_PIPE);
+                entries.accept(ALUMINIUM_HYDROXIDE);
+                entries.accept(SEEDED_ALUMINOUS_SLUDGE);
+                entries.accept(THERMITE);
             })
             .build();
-
- */
-public static final ResourceKey<CreativeModeTab> CREATIVE_TAB =
-        ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(UndustrializedMod.MOD_ID, "group"));
-
-    public static void register(Registrate REGISTRATE) {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CREATIVE_TAB, FabricItemGroup.builder()
-                .title(Component.translatable("itemGroup.c_main"))
-                .icon(ModItems.CRUSHED_BAUXITE::getDefaultInstance)
-                .displayItems((b, output) -> {
-                    for (RegistryEntry<Item> item : REGISTRATE.getAll(Registries.ITEM)) {
-                        output.accept(item.get());
-                    }
-                })
-                .build()
-        );
-    }
 }
