@@ -1,11 +1,8 @@
 package net.tywrapstudios.c_undustrialized.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.tywrapstudios.c_undustrialized.UndustrializedMod;
 import net.minecraft.resources.ResourceLocation;
