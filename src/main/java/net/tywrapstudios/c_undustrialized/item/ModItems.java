@@ -22,25 +22,10 @@ public class ModItems {
     public static final Item THERMITE =                             registerItem("thermite",
             new Item(new FabricItemSettings()));
 
-
-   private static void addItemsToCuItemGroup(FabricItemGroupEntries entries) {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS)
-              .register((content) -> {
-                 content.accept(CRUSHED_BAUXITE);
-                 content.accept(STEEL_PIPE);
-                 content.accept(ALUMINIUM_HYDROXIDE);
-                 content.accept(SEEDED_ALUMINOUS_SLUDGE);
-                 content.accept(THERMITE);
-       });
-    }
-
-
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(UndustrializedMod.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        UndustrializedMod.LOGGER.info("Registering Mod Items for" + UndustrializedMod.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(ModItems::addItemsToCuItemGroup);
+        UndustrializedMod.LOGGER.info("Registering Mod Items for" + UndustrializedMod.NAME);
     }
 }
