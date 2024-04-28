@@ -1,4 +1,4 @@
-package net.tywrapstudios.c_undustrialized.item;
+package net.tywrapstudios.undustrialized.item;
 
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -8,13 +8,16 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.tywrapstudios.undustrialized.UndustrializedMod;
+import net.tywrapstudios.undustrialized.block.ModBlocks_SimpleBlocks;
 
-import static net.tywrapstudios.c_undustrialized.item.ModItems.*;
+import static net.tywrapstudios.undustrialized.item.ModItems.*;
 
 public class ModItemGroups {
 
     public static void registerModItemGroups() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation("c_undustrialized", "cu_main"), CU_MAIN);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation("undustrialized", "cu_main"), CU_MAIN);
+        UndustrializedMod.LOGGER.info("Registering CreativeModeTabs for " + UndustrializedMod.NAME);
     }
     private static final CreativeModeTab CU_MAIN = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.CRUSHED_BAUXITE))

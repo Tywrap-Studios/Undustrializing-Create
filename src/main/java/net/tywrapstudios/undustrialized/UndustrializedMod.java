@@ -1,11 +1,12 @@
-package net.tywrapstudios.c_undustrialized;
+package net.tywrapstudios.undustrialized;
 
 import com.simibubi.create.Create;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.ResourceLocation;
-import net.tywrapstudios.c_undustrialized.item.ModItemGroups;
-import net.tywrapstudios.c_undustrialized.item.ModItems;
+import net.tywrapstudios.undustrialized.block.ModBlocks_SimpleBlocks;
+import net.tywrapstudios.undustrialized.item.ModItemGroups;
+import net.tywrapstudios.undustrialized.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +20,7 @@ public class UndustrializedMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
-		LOGGER.info("Create addon mod [{}] registered ModItems, ModItemGroups", NAME);
+		ModBlocks_SimpleBlocks.registerModBlocksForClass();
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
@@ -27,7 +28,6 @@ public class UndustrializedMod implements ModInitializer {
 				() -> () -> "{} is accessing Porting Lib from the server!"
 		), NAME);
 	}
-
 	public static ResourceLocation id(String path) {
 		return new ResourceLocation(MOD_ID, path);
 	}

@@ -5,17 +5,22 @@
   "name": "Create: Undustrialized",
   "description": "",
   "authors": [
-    "Tywrap Studios"
+    "Tywrap Studios",
+    "Toasted Bacon",
+    "-------------",
+    "More Credits:",
+    "~Textures:",
+    "Panosrob, Bor4oTheBombshell"
   ],
   "contact": {
-    "sources": ""
+    "sources": "https://github.com/TywrapStudios/Undustrializing-Create"
   },
   "license": "MIT",
-  "icon": "assets/c_undustrialized/icons/icon.png",
+  "icon": "assets/undustrialized/icons/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.tywrapstudios.c_undustrialized.UndustrializedMod"
+      "net.tywrapstudios.undustrialized.UndustrializedMod"
     ]
   },
   "mixins": [

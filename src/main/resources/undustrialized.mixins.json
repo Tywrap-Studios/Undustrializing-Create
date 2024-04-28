@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.tywrapstudios.c_undustrialized.mixin",
+  "package": "net.tywrapstudios.undustrialized.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],

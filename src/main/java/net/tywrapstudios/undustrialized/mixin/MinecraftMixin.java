@@ -1,10 +1,10 @@
-package net.tywrapstudios.c_undustrialized.mixin;
+package net.tywrapstudios.undustrialized.mixin;
 
 import net.minecraft.client.Minecraft;
 
 import net.minecraft.client.main.GameConfig;
 
-import net.tywrapstudios.c_undustrialized.UndustrializedMod;
+import net.tywrapstudios.undustrialized.UndustrializedMod;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

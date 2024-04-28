@@ -1,8 +1,8 @@
-package net.tywrapstudios.c_undustrialized;
+package net.tywrapstudios.undustrialized;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.tywrapstudios.c_undustrialized.item.ModItemGroups;
-import net.tywrapstudios.c_undustrialized.item.ModItems;
+import net.tywrapstudios.undustrialized.item.ModItemGroups;
+import net.tywrapstudios.undustrialized.item.ModItems;
 
 public class UndustrializedModClient implements ClientModInitializer {
     @Override

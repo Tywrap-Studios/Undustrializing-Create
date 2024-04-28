@@ -1,10 +1,10 @@
-package net.tywrapstudios.c_undustrialized.item;
+package net.tywrapstudios.undustrialized.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
-import net.tywrapstudios.c_undustrialized.UndustrializedMod;
+import net.tywrapstudios.undustrialized.UndustrializedMod;
 import net.minecraft.resources.ResourceLocation;
 
 public class ModItems {
@@ -23,6 +23,6 @@ public class ModItems {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(UndustrializedMod.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        UndustrializedMod.LOGGER.info("Registering Mod Items for" + UndustrializedMod.NAME);
+        UndustrializedMod.LOGGER.info("Registering ModItems for " + UndustrializedMod.NAME);
     }
 }
