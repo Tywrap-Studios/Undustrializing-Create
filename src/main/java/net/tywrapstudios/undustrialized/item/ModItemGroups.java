@@ -9,7 +9,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.tywrapstudios.undustrialized.UndustrializedMod;
-import net.tywrapstudios.undustrialized.block.ModBlocks_SimpleBlocks;
 
 import static net.tywrapstudios.undustrialized.item.ModItems.*;
 
@@ -28,6 +27,19 @@ public class ModItemGroups {
                 entries.accept(ALUMINIUM_HYDROXIDE);
                 entries.accept(SEEDED_ALUMINOUS_SLUDGE);
                 entries.accept(THERMITE);
+                entries.accept(FEEDING_TUBE);
+                entries.accept(BRASS_IMPULSE_ROTOR);
+                entries.accept(ALUMINA_POWDER);
+                entries.accept(CHARCOAL_POWDER);
+                entries.accept(CARBON_POWDER);
+                entries.accept(COAL_POWDER);
+                entries.accept(IRON_POWDER);
+                entries.accept(PIG_IRON_INGOT);
+                entries.accept(STEEL_INGOT);
+                entries.accept(ALUMINIUM_INGOT);
+                entries.accept(STEEL_SHEET);
+                entries.accept(ALUMINIUM_SHEET);
+                entries.accept(FILE);
             })
             .build();
 }
