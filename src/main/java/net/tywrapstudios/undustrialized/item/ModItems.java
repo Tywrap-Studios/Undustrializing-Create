@@ -1,11 +1,11 @@
 package net.tywrapstudios.undustrialized.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.Item;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import net.tywrapstudios.undustrialized.UndustrializedMod;
-import net.minecraft.resources.ResourceLocation;
 
 public class ModItems {
     //uncategorized
@@ -54,9 +54,6 @@ public class ModItems {
     public static final Item REVERSE_OSMOSIS_FILTER = registerItem("reverse_osmosis_filter", new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(UndustrializedMod.MOD_ID, name), item);
-    }
-    public static void registerModItems() {
-        UndustrializedMod.LOGGER.info("Registering ModItems for " + UndustrializedMod.NAME);
+        return Registry.register(Registries.ITEM, new Identifier(UndustrializedMod.MOD_ID, name), item);
     }
 }
