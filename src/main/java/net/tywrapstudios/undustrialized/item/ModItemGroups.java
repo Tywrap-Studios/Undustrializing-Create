@@ -23,23 +23,46 @@ public class ModItemGroups {
             .title(Component.translatable("itemGroup.c_undustrialized_cu_main"))
             .displayItems((context, entries) -> {
                 entries.accept(CRUSHED_BAUXITE);
+                entries.accept(BAUXITE_CLUMP);
                 entries.accept(STEEL_PIPE);
                 entries.accept(ALUMINIUM_HYDROXIDE);
                 entries.accept(SEEDED_ALUMINOUS_SLUDGE);
                 entries.accept(THERMITE);
                 entries.accept(FEEDING_TUBE);
                 entries.accept(BRASS_IMPULSE_ROTOR);
+
                 entries.accept(ALUMINA_POWDER);
                 entries.accept(CHARCOAL_POWDER);
                 entries.accept(CARBON_POWDER);
                 entries.accept(COAL_POWDER);
                 entries.accept(IRON_POWDER);
+
                 entries.accept(PIG_IRON_INGOT);
                 entries.accept(STEEL_INGOT);
                 entries.accept(ALUMINIUM_INGOT);
+                entries.accept(BAUXITE_INGOT);
+
                 entries.accept(STEEL_SHEET);
                 entries.accept(ALUMINIUM_SHEET);
+
                 entries.accept(FILE);
+
+                entries.accept(STEEL_STATOR);
+                entries.accept(ELECTRODE_PAIR);
+                entries.accept(BRINE_CONCENTRATE);
+                entries.accept(SALT);
+                entries.accept(LYE);
+                entries.accept(STEEL_ROD);
+                entries.accept(ALUMINIUM_ROD);
+                entries.accept(STEEL_AXLE);
+                entries.accept(ALUMINIUM_AXLE);
+                entries.accept(ALUMINIUM_ROTOR);
+                entries.accept(HIGH_PRESSURE_ALUMINIUM_ROTOR);
+                entries.accept(INERT_ANODE);
+                entries.accept(INERT_CATHODE);
+                entries.accept(FLUID_FILTER);
+                entries.accept(REVERSE_OSMOSIS_FILTER);
             })
             .build();
+
 }

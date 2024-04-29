@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "undustrialized:steel_sheet"
+    },
+    "+": {
+      "item": "undustrialized:steel_ingot"
+    }
+  },
+  "pattern": [
+    "#+#",
+    "# #",
+    "#+#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "undustrialized:steel_pipe"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "undustrialized:steal_sheet"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "undustrialized:feeding_tube"
+    }
+  ]
+}

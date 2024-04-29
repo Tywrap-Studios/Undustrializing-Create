@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "create:brass_sheet"
+    },
+    "+": {
+      "item": "create:water_wheel"
+    }
+  },
+  "pattern": [
+    "###",
+    "#+#",
+    "###"
+  ],
+  "result": {
+    "item": "undustrialized:brass_impulse_rotor"
+  }
+}

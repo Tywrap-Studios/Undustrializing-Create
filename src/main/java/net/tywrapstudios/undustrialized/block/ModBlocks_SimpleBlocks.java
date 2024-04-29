@@ -19,6 +19,8 @@ public class ModBlocks_SimpleBlocks {
 
     // Don't forget: blockstates, block models, item models and correct textures!
 
+    public static final Block BAUXITE_ORE = registerBlock("bauxite_ore", new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+
 
 
 

@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "item": "undustrialized:charcoal_powder"
+    },
+    {
+      "chance": 0.5,
+      "item": "undustrialized:charcoal_powder"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "undustrialized:steal_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "undustrialized:steel_sheet"
+    }
+  ]
+}

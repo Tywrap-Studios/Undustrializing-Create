@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "undustrialized:aluminium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "undustrialized:aluminium_sheet"
+    }
+  ]
+}

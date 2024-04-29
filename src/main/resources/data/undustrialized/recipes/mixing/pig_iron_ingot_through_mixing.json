@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "amount": 8,
+      "item": "minecraft:iron_ore"
+    },
+    {
+      "item": "undustrialized:carbon_powder"
+    }
+  ],
+  "results": [
+    {
+      "amount": 6,
+      "item": "undustrialized:pig_iron_ingot"
+    },
+    {
+      "amount": 3,
+      "item": "minecraft:iron_ingot"
+    }
+  ]
+}

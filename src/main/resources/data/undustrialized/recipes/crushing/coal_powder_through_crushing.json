@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "item": "undustrialized:coal_powder"
+    },
+    {
+      "chance": 0.5,
+      "item": "undustrialized:coal_powder"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    }
+  ]
+}

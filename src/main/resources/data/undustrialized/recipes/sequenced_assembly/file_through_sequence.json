@@ -1,0 +1,49 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "undustrialized:steel_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "undustrialized:file"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "undustrialized:unfinished_file"
+        },
+        {
+          "tag": "minecraft:planks"
+        }
+      ],
+      "results": [
+        {
+          "item": "undustrialized:unfinished_file"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "undustrialized:unfinished_file"
+        },
+        {
+          "item": "create:sand_paper"
+        }
+      ],
+      "results": [
+        {
+          "item": "undustrialized:unfinished_file"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "undustrialized:unfinished_file"
+  }
+}
