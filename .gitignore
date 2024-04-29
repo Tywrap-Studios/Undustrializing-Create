@@ -1,0 +1,14 @@
+## Based on GitHub's Eclipse .gitignore
+
+run/
+.gradle/
+build/
+gradle-app.setting
+
+## IntelliJ IDEA
+
+.idea/
+out/
+*.iml
+*.iws
+*.ipr
