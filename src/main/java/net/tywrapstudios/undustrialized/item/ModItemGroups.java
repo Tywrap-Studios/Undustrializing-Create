@@ -20,7 +20,7 @@ public class ModItemGroups {
     }
     private static final CreativeModeTab CU_MAIN = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.CRUSHED_BAUXITE))
-            .title(Component.translatable("itemGroup.c_undustrialized_cu_main"))
+            .title(Component.translatable("itemGroup.undustrialized_cu_main"))
             .displayItems((context, entries) -> {
                 entries.accept(CRUSHED_BAUXITE);
                 entries.accept(BAUXITE_CLUMP);
